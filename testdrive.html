@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Test Drive</title>
+  <style>
+    
+    /* Basic styling for demonstration purposes */
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('test.jpg');
+      background-size:cover;
+      background-position: center;
+      background-attachment: fixed;
+    
+    /* You can also adjust other properties like background-repeat, background-position, etc. */
+  
+    }
+    .container {
+      max-width: 500px;
+      margin: 140px auto;
+      margin-right: 10px;
+      background-color:transparent;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      
+    }
+    h2 {
+    color: #f3f0f0;
+      text-align: center;
+    }
+    form {
+        color: aliceblue;
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Book a Test Drive <br> Toyota Land Cruiser</h2>
+  <form action="/submit_test_drive.php" method="post">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone" required>
+
+    <label for="car_model">Car Model:</label>
+    <select id="car_model" name="car_model" required>
+      <option value="">Select Car Model</option>
+      <option value="Model A">2023 Land Cruiser "70" series</option>
+      <option value="Model B">2023 Land Cruiser "250" series</option>
+      <option value="Model C">2021 Land Cruiser "300" series</option>
+      <!-- Add more options as needed -->
+    </select>
+
+    <label for="preferred_date">Preferred Date:</label>
+    <input type="date" id="preferred_date" name="preferred_date" required>
+
+    <input type="submit" value="Book Test Drive">
+  </form>
+</div>
+
+</body>
+</html>

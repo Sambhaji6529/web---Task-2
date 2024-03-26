@@ -1,0 +1,29 @@
+#car-features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.feature {
+    text-align: center;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.feature img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+   
+}
+
+.feature h2 {
+    margin-top: 20px;
+}
+
+.feature p {
+    margin-top: 10px;
+}
+
